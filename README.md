@@ -1,2 +1,2 @@
-# Pizzaria-terceir-o
+# Pizzaria-terceiro
 sla
