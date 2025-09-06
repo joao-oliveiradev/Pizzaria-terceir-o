@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   botoes.forEach(botao => {
     botao.addEventListener('click', function () {
-      const sabor = this.getAttribute('data-sabor');
+      const sabor = botao.getAttribute('data-sabor');
       fazerPedido(sabor);
     });
   });
