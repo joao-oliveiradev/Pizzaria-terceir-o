@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function fazerPedido(sabor) {
-  const numero = '55419996960869';
+  const numero = '5541996960869';
   const agora = new Date();
   const hora = agora.getHours().toString().padStart(2, '0');
   const minutos = agora.getMinutes().toString().padStart(2, '0');
@@ -21,3 +21,4 @@ function fazerPedido(sabor) {
 
   window.open(url, '_blank');
 }
+
