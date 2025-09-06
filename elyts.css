@@ -167,13 +167,7 @@
       flex-direction: column;
       gap: 0.5rem;
     }
-}
-/* Animação de rotação */
-@keyframes girarPizza {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
+.pizza-card img, .funcionario-card img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 8px;
