@@ -71,25 +71,18 @@
     font-size: 0.9rem;
   }
   
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .hero h2 {
-      font-size: 2.2rem;
-    }
-  
     nav ul {
       flex-direction: column;
       gap: 0.5rem;
     }
       
-.funcionario-card img {
-  width: 10px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto;
+.funcionario-card {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  margin: 2rem auto;
 }
-
-
 
