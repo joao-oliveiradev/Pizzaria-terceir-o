@@ -168,3 +168,11 @@
       gap: 0.5rem;
     }
       
+.funcionario-card img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
