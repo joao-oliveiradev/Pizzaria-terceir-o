@@ -110,23 +110,3 @@ footer {
   display: block;
   margin: 0 auto 1rem;
 }
-/* Card de funcionário */
-.funcionario-card {
-  text-align: center;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  margin: 2rem auto;
-}
-
-/* Imagem do funcionário */
-.funcionario-card img {
-  width: 120px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 1rem;
-}
