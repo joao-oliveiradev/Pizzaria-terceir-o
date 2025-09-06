@@ -1,88 +1,132 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000000;
-    color: #292929;
-    line-height: 1.6;
-  }
-  
-  /* Cabeçalho fixo */
-  header {
-    background-color: #ffd208;
-    color: #000000;
-    padding: 1rem 2rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  header h1 {
-    font-size: 1.8rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
-  }
-  nav a::after{
-  content: " ";
-   width: 0%;
-   height: 2px;
-   background-color: #000000;
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   }
-  
-   nav a:hover::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #292929;
+  line-height: 1.6;
+}
+
+/* Cabeçalho fixo */
+header {
+  background-color: #ffd208;
+  color: #000000;
+  padding: 1rem 2rem;
+  position: fixed;
   width: 100%;
-  
-  .order-btn:hover {
-    background-color: #8e0000;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #292929;
+  line-height: 1.6;
+}
+
+/* Cabeçalho fixo */
+header {
+  background-color: #ffd208;
+  color: #000000;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* Responsividade para navegação */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  /* Rodapé */
-  footer {
-    background-color: #222;
-    color: #eee;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-    font-size: 0.9rem;
-  }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-      
+}
+
+/* Card de funcionário */
 .funcionario-card {
   text-align: center;
   padding: 1rem;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 300px;
   margin: 2rem auto;
 }
 
+/* Imagem do funcionário */
+.funcionario-card img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+/* Card de funcionário */
+.funcionario-card {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 2rem auto;
+}
+
+/* Imagem do funcionário */
+.funcionario-card img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+}
