@@ -168,10 +168,17 @@
       gap: 0.5rem;
     }
       
-.funcionario-card img {
+.pizza-card, .funcionario-card {
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    background-color: #5e0202; /* Vermelho escuro */
+    border-radius: 8px;
+    color: #f4f4f4; /* Texto claro */
+}
+
+.pizza-card img, .funcionario-card img {
     max-width: 10%;
     height: auto;
     border-radius: 8px;
-
-}
 
