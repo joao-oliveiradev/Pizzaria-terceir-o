@@ -1,0 +1,14 @@
+<script>
+  function fazerPedido(sabor) {
+    const numero = '5541996960869';
+    const agora = new Date();
+    const hora = agora.getHours().toString().padStart(2, '0');
+    const minutos = agora.getMinutes().toString().padStart(2, '0');
+    const horario = `${hora}:${minutos}`;
+
+    const mensagem = `Olá! Gostaria de pedir uma ${sabor} às ${horario}.`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+  }
+</script>
