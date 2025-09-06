@@ -167,7 +167,11 @@
       flex-direction: column;
       gap: 0.5rem;
     }
-.pizza-card img, .funcionario-card img {
+      
+.funcionario-card img {
     max-width: 10%;
     height: auto;
     border-radius: 8px;
+
+}
+
