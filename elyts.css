@@ -40,47 +40,6 @@ footer {
   margin-top: 4rem;
   font-size: 0.9rem;
 }
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #000000;
-  color: #292929;
-  line-height: 1.6;
-}
-
-/* Cabeçalho fixo */
-header {
-  background-color: #ffd208;
-  color: #000000;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-header h1 {
-  font-size: 1.8rem;
-}
-/* Rodapé */
-footer {
-  background-color: #222;
-  color: #eee;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-}
 
 /* Responsividade para navegação */
 @media (max-width: 768px) {
@@ -90,18 +49,25 @@ footer {
   }
 }
 
-/* Card de funcionário */
+.funcionarios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
 .funcionario-card {
-  text-align: center;
-  padding: 1rem;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  width: calc(33.333% - 2rem);
   max-width: 300px;
-  margin: 2rem auto;
+  box-sizing: border-box;
 }
 
-/* Imagem do funcionário */
 .funcionario-card img {
   width: 120px;
   height: auto;
@@ -110,11 +76,15 @@ footer {
   display: block;
   margin: 0 auto 1rem;
 }
-.funcionario-card {
-  flex: 1 1 calc(33.333% - 20px);
-  box-sizing: border-box;
-  border: 1px
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center:
+
+@media (max-width: 900px) {
+  .funcionario-card {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .funcionario-card {
+    width: 100%;
+  }
 }
