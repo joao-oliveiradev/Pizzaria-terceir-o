@@ -27,7 +27,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-header h1 {
+ main h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -109,6 +109,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
