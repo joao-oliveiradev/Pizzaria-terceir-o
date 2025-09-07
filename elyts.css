@@ -28,7 +28,28 @@ header {
 }
 
 header h1 {
-  font-size: 1.8rem;
+  text-align: center;
+  color: #ffd208;
+  font-size: 2rem;
+  margin: 2rem 0;
+
+}
+
+li a[href="index.html"] {
+  display: inline-block;
+  background-color: #ffd208;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li a[href="index.html"]:hover {
+  background-color: #e6c107;
+  transform: translateY(-2px);
 }
 
 /* Rodapé */
@@ -88,3 +109,4 @@ footer {
     width: 100%;
   }
 }
+
